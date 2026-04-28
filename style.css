@@ -4,85 +4,111 @@
    ============================================================ */
 
 /* === CSS Variables (Light / Oat Theme) === */
+/* === CLEAN MODERN PALETTE === */
 :root {
-    --bg-primary: #f5f1e8;
-    --bg-secondary: #fdfaf2;
-    --bg-tertiary: #ede9dc;
-    --bg-sidebar: #fdfaf2;
-    --bg-nav: #fdfaf2;
+    /* Base backgrounds */
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f1f5f9;
     --bg-card: #ffffff;
-    --bg-code: #f0ece0;
-    --bg-hover: #e4dfd3;
-    --text-primary: #2c2e1f;
-    --text-secondary: #5c6048;
-    --text-muted: #8a8e72;
-    --border: #d5cfbe;
-    --border-light: #e5e1d5;
-    --accent: #4a7c59;
-    --accent-hover: #3a6347;
-    --accent-light: #e8f2ea;
-    --green: #5a8a5e;
-    --green-bg: #eef5ef;
-    --green-border: #9fbe9f;
-    --red: #a05555;
-    --red-bg: #faf0f0;
-    --red-border: #d4a0a0;
-    --yellow: #9e8035;
-    --yellow-bg: #faf5e4;
-    --yellow-border: #d4b870;
-    --blue: #4a6a8a;
-    --blue-bg: #eef3f8;
-    --blue-border: #9ab5cc;
-    --purple: #7a5a8a;
-    --purple-bg: #f4f0f8;
-    --purple-border: #c0a8d4;
-    --sand: #c9a87c;
-    --sand-bg: #fdf6ec;
-    --olive: #7d8c3a;
-    --shadow-sm: 0 1px 3px rgba(60,55,30,0.07);
-    --shadow-md: 0 4px 14px rgba(60,55,30,0.10);
-    --shadow-lg: 0 8px 30px rgba(60,55,30,0.13);
-    --radius-sm: 7px;
-    --radius-md: 11px;
+    --bg-sidebar: #ffffff;
+    --bg-nav: #ffffff;
+    --bg-code: #0f172a;
+
+    /* Text */
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+
+    /* Borders */
+    --border: #e2e8f0;
+    --border-light: #f1f5f9;
+
+    /* Primary Accent (modern blue) */
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --accent-light: #dbeafe;
+
+    /* Status colors (simplified & clean) */
+    --green: #16a34a;
+    --green-bg: #dcfce7;
+    --green-border: #86efac;
+
+    --red: #dc2626;
+    --red-bg: #fee2e2;
+    --red-border: #fca5a5;
+
+    --yellow: #ca8a04;
+    --yellow-bg: #fef9c3;
+    --yellow-border: #fde047;
+
+    --blue: #2563eb;
+    --blue-bg: #dbeafe;
+    --blue-border: #93c5fd;
+
+    --purple: #7c3aed;
+    --purple-bg: #ede9fe;
+    --purple-border: #c4b5fd;
+
+    --sand: #c08457;
+    --sand-bg: #fff7ed;
+
+    --olive: #64748b;
+
+    /* Effects */
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 10px rgba(0,0,0,0.08);
+    --shadow-lg: 0 10px 25px rgba(0,0,0,0.12);
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
     --radius-lg: 18px;
-    --sidebar-width: 280px;
-    --nav-height: 56px;
+
     --transition: 0.2s ease;
 }
 
-/* === Dark Theme === */
+/* === DARK MODE (clean slate dark) === */
 body.dark {
-    --bg-primary: #151710;
-    --bg-secondary: #1c1f14;
-    --bg-tertiary: #22261a;
-    --bg-sidebar: #181b12;
-    --bg-nav: #181b12;
-    --bg-card: #1e2218;
-    --bg-code: #22261a;
-    --bg-hover: #2a2f20;
-    --text-primary: #e4e2d8;
-    --text-secondary: #a8a88e;
-    --text-muted: #72745a;
-    --border: #32371f;
-    --border-light: #282d1c;
-    --accent: #6aaa7a;
-    --accent-hover: #7dc08e;
-    --accent-light: #1c2e1e;
-    --green-bg: #0e2010;
-    --green-border: #2a5030;
-    --red-bg: #2a1010;
-    --red-border: #5a2020;
-    --yellow-bg: #281e08;
-    --yellow-border: #6a5010;
-    --blue-bg: #0e1c2a;
-    --blue-border: #1e3a5a;
-    --purple-bg: #1a1020;
-    --purple-border: #4a2870;
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.35);
-    --shadow-md: 0 4px 14px rgba(0,0,0,0.50);
-    --shadow-lg: 0 8px 30px rgba(0,0,0,0.60);
-}
+    --bg-primary: #0b1220;
+    --bg-secondary: #0f172a;
+    --bg-tertiary: #111c33;
+    --bg-card: #0f172a;
+    --bg-sidebar: #0b1220;
+    --bg-nav: #0b1220;
+    --bg-code: #020617;
 
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+
+    --border: #1e293b;
+    --border-light: #111c33;
+
+    --accent: #3b82f6;
+    --accent-hover: #60a5fa;
+    --accent-light: #1e3a8a;
+
+    --green-bg: #052e16;
+    --green-border: #14532d;
+
+    --red-bg: #450a0a;
+    --red-border: #7f1d1d;
+
+    --yellow-bg: #422006;
+    --yellow-border: #78350f;
+
+    --blue-bg: #0b2a5b;
+    --blue-border: #1d4ed8;
+
+    --purple-bg: #2e1065;
+    --purple-border: #5b21b6;
+
+    --sand-bg: #2a1a10;
+
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.4);
+    --shadow-md: 0 6px 16px rgba(0,0,0,0.45);
+    --shadow-lg: 0 12px 30px rgba(0,0,0,0.6);
+}
 /* === Reset & Base === */
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; scroll-padding-top:calc(var(--nav-height) + 20px); }
