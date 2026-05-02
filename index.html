@@ -33,14 +33,11 @@
                 <h3>Navigation</h3>
                 <button class="sidebar-close" id="sidebarClose">&#10005;</button>
             </div>
-
-            <!-- Main Tabs -->
             <div class="tab-buttons">
                 <button class="tab-btn active" data-tab="cours">Cours</button>
                 <button class="tab-btn" data-tab="quiz">Quiz</button>
             </div>
 
-            <!-- Sidebar Nav for Cours -->
             <nav class="sidebar-nav" id="nav-cours">
                 <div class="nav-section">
                     <div class="nav-section-title">Chapitre 1 : Introduction</div>
@@ -73,7 +70,7 @@
                     <a href="#c3-controle" class="nav-link">I. Contrôle d'accès</a>
                     <a href="#c3-comptes" class="nav-link">II. Gestion des comptes</a>
                     <a href="#c3-logs" class="nav-link">III. Journalisation & audit</a>
-                    <a href="#c3-fichiers" class="nav-link">IV. Sécurité du système de fichiers</a>
+                    <a href="#c3-fichiers" class="nav-link">IV. Système de fichiers</a>
                     <a href="#c3-maj" class="nav-link">V. Mises à jour</a>
                     <a href="#c3-malware" class="nav-link">VI. Malware</a>
                     <a href="#c3-outils" class="nav-link">VII. Outils d'analyse</a>
@@ -81,16 +78,28 @@
                 <div class="nav-section">
                     <div class="nav-section-title">Chapitre 4 : Sécurité des BDD</div>
                     <a href="#c4-intro" class="nav-link">Introduction</a>
-                    <a href="#c4-acces" class="nav-link">I. Contrôle d'accès & privilèges</a>
-                    <a href="#c4-connexions" class="nav-link">II. Sécurisation des connexions</a>
+                    <a href="#c4-acces" class="nav-link">I. Contrôle d'accès</a>
+                    <a href="#c4-connexions" class="nav-link">II. Connexions sécurisées</a>
                     <a href="#c4-sql" class="nav-link">III. Injections SQL</a>
-                    <a href="#c4-chiffrement" class="nav-link">IV. Chiffrement des données</a>
-                    <a href="#c4-sauvegardes" class="nav-link">V. Sauvegardes sécurisées</a>
+                    <a href="#c4-chiffrement" class="nav-link">IV. Chiffrement</a>
+                    <a href="#c4-sauvegardes" class="nav-link">V. Sauvegardes</a>
                     <a href="#c4-audit" class="nav-link">VI. Surveillance & audit</a>
+                </div>
+                <div class="nav-section">
+                    <div class="nav-section-title">Chapitre 5 : Sécurité des réseaux</div>
+                    <a href="#c5-intro" class="nav-link">Introduction</a>
+                    <a href="#c5-attaques" class="nav-link">I. Modèles d'attaques</a>
+                    <a href="#c5-sniffing" class="nav-link">1. Sniffing réseau</a>
+                    <a href="#c5-mitm" class="nav-link">2. Attaque MITM</a>
+                    <a href="#c5-ddos" class="nav-link">3. DDoS</a>
+                    <a href="#c5-parefeu" class="nav-link">II. Pare-feu & proxy</a>
+                    <a href="#c5-vpn" class="nav-link">III. VPN</a>
+                    <a href="#c5-protocoles" class="nav-link">IV. Protocoles sécurisés</a>
+                    <a href="#c5-ids" class="nav-link">V. IDS / IPS</a>
+                    <a href="#c5-pdf" class="nav-link">📄 Cours PDF complet</a>
                 </div>
             </nav>
 
-            <!-- Sidebar Nav for Quiz -->
             <nav class="sidebar-nav hidden" id="nav-quiz">
                 <div class="nav-section">
                     <div class="nav-section-title">Quiz Cybersécurité</div>
@@ -100,22 +109,16 @@
                 <div class="nav-section">
                     <div class="nav-section-title">Infos</div>
                     <div style="padding:8px 16px;font-size:12px;color:var(--text-secondary);">
-                        50 questions · QCM & Vrai/Faux<br>
-                        Toutes les réponses expliquées
+                        65 questions · QCM & Vrai/Faux<br>
+                        5 chapitres · Toutes réponses expliquées
                     </div>
                 </div>
             </nav>
         </aside>
 
-        <!-- Sidebar Toggle (mobile) -->
         <button class="sidebar-toggle" id="sidebarToggle">&#9776;</button>
 
-        <!-- Main Content -->
         <main class="content" id="mainContent">
-
-            <!-- ============================================================ -->
-            <!-- SECTION: COURS -->
-            <!-- ============================================================ -->
             <div class="tab-content active" id="content-cours">
 
                 <div class="hero">
@@ -123,15 +126,14 @@
                     <p>Cours complet — FSBM, Université Hassan II, Casablanca</p>
                     <p>S6 Génie Informatique — 2025/2026</p>
                     <div class="hero-chips">
-                        <span class="chip">4 Chapitres</span>
-                        <span class="chip">Quiz 50 questions</span>
+                        <span class="chip">5 Chapitres</span>
+                        <span class="chip">Quiz 65 questions</span>
                         <span class="chip">Mode sombre ☾</span>
                     </div>
                 </div>
 
                 <!-- ==================== CHAPITRE 1 ==================== -->
                 <h2 class="chapter-title" id="chapitre1">Chapitre 1 : Introduction à la Sécurité des données</h2>
-
                 <div class="card objectives-card">
                     <h3>&#127919; Objectifs pédagogiques</h3>
                     <ul>
@@ -146,20 +148,16 @@
                 <section id="c1-intro">
                     <h3 class="section-title">1. Introduction générale</h3>
                     <div class="card">
-                        <p>À l'ère du numérique, les organisations génèrent et échangent un volume croissant d'<strong>informations sensibles</strong> : données personnelles, transactions financières, dossiers médicaux, secrets industriels. Cette transformation numérique expose les systèmes d'information à des <strong>menaces de plus en plus sophistiquées</strong>.</p>
+                        <p>À l'ère du numérique, les organisations génèrent et échangent un volume croissant d'<strong>informations sensibles</strong> : données personnelles, transactions financières, dossiers médicaux, secrets industriels.</p>
                         <p>La <strong>sécurité des données</strong> désigne l'ensemble des politiques, mécanismes et bonnes pratiques visant à assurer la <strong>confidentialité</strong>, l'<strong>intégrité</strong> et la <strong>disponibilité</strong> des informations.</p>
-                        <div class="important-box">
-                            <strong>&#9888; Point essentiel :</strong> La sécurité absolue n'existe pas. L'objectif est de <strong>réduire les risques à un niveau acceptable</strong> grâce à une approche fondée sur la <strong>gestion des risques</strong>.
-                        </div>
+                        <div class="important-box"><strong>&#9888; Point essentiel :</strong> La sécurité absolue n'existe pas. L'objectif est de <strong>réduire les risques à un niveau acceptable</strong> grâce à une approche fondée sur la <strong>gestion des risques</strong>.</div>
                     </div>
                 </section>
 
                 <section id="c1-infosec">
                     <h3 class="section-title">2. Sécurité de l'information</h3>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Définition :</strong> La sécurité de l'information désigne l'ensemble des <strong>politiques, processus et technologies</strong> mis en œuvre pour protéger les informations d'une organisation, <em>quel que soit leur support</em>, contre l'accès non autorisé, la modification, la perte ou l'interruption.
-                        </div>
+                        <div class="definition-box"><strong>Définition :</strong> La sécurité de l'information désigne l'ensemble des <strong>politiques, processus et technologies</strong> mis en œuvre pour protéger les informations contre l'accès non autorisé, la modification, la perte ou l'interruption.</div>
                         <h5>Les 4 fonctions fondamentales :</h5>
                         <div class="grid-2">
                             <div class="mini-card accent-blue"><h6>1. Prévenir</h6><p>Mécanismes réduisant la probabilité d'un incident (pare-feu, authentification, chiffrement).</p></div>
@@ -173,9 +171,7 @@
                 <section id="c1-actifs">
                     <h3 class="section-title">3. Les Actifs (Assets)</h3>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Actif (Asset) :</strong> Tout élément ayant de la valeur pour une organisation et nécessitant une protection appropriée.
-                        </div>
+                        <div class="definition-box"><strong>Actif (Asset) :</strong> Tout élément ayant de la valeur pour une organisation et nécessitant une protection appropriée.</div>
                         <div class="grid-2">
                             <div class="mini-card accent-blue"><h6>&#128187; Matériel</h6><p>Serveurs, routeurs, disques durs, clés USB, imprimantes.</p></div>
                             <div class="mini-card accent-green"><h6>&#128190; Logiciels</h6><p>Systèmes d'exploitation, applications métier, logiciels de sécurité.</p></div>
@@ -189,50 +185,20 @@
                     <h3 class="section-title">4. Vulnérabilité, Menace, Risque</h3>
                     <h4>4.1 Vulnérabilité — La Faiblesse</h4>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Définition :</strong> Une vulnérabilité est une <strong>faiblesse</strong> (technique ou organisationnelle) pouvant être exploitée pour compromettre la sécurité d'un système. Elle « attend » d'être exploitée.
-                        </div>
-                        <h5>5 types de vulnérabilités :</h5>
-                        <div class="expandable">
-                            <button class="expand-btn">1. Logicielles <span class="arrow">&#9660;</span></button>
-                            <div class="expand-content">
-                                <ul><li>Dépassement de mémoire (buffer overflow)</li><li>Validation insuffisante des entrées</li><li>Erreurs de configuration</li><li>Bibliothèques obsolètes</li></ul>
-                            </div>
-                        </div>
-                        <div class="expandable">
-                            <button class="expand-btn">2. Réseau <span class="arrow">&#9660;</span></button>
-                            <div class="expand-content">
-                                <ul><li>Protocoles non sécurisés</li><li>Ports ouverts non nécessaires</li><li>Absence de chiffrement des communications</li><li>Segmentation insuffisante</li></ul>
-                            </div>
-                        </div>
-                        <div class="expandable">
-                            <button class="expand-btn">3. Humaines <span class="arrow">&#9660;</span></button>
-                            <div class="expand-content">
-                                <ul><li>Mots de passe faibles</li><li>Divulgation d'informations sensibles</li><li>Ouverture de fichiers/liens suspects</li></ul>
-                            </div>
-                        </div>
-                        <div class="expandable">
-                            <button class="expand-btn">4. Matérielles <span class="arrow">&#9660;</span></button>
-                            <div class="expand-content">
-                                <ul><li>Défauts de fabrication</li><li>Protection physique insuffisante</li><li>Périphériques non sécurisés</li></ul>
-                            </div>
-                        </div>
-                        <div class="expandable">
-                            <button class="expand-btn">5. Organisationnelles <span class="arrow">&#9660;</span></button>
-                            <div class="expand-content">
-                                <ul><li>Absence de politique de sécurité</li><li>Mauvaise gestion des droits d'accès</li><li>Mises à jour irrégulières</li></ul>
-                            </div>
-                        </div>
-                        <div class="warning-box"><strong>Zero-day :</strong> Vulnérabilité exploitée <em>avant</em> qu'un correctif ne soit disponible. Très dangereuse car aucune protection n'existe encore.</div>
+                        <div class="definition-box"><strong>Définition :</strong> Une vulnérabilité est une <strong>faiblesse</strong> (technique ou organisationnelle) pouvant être exploitée pour compromettre la sécurité d'un système.</div>
+                        <div class="expandable"><button class="expand-btn">1. Logicielles <span class="arrow">&#9660;</span></button><div class="expand-content"><ul><li>Dépassement de mémoire (buffer overflow)</li><li>Validation insuffisante des entrées</li><li>Erreurs de configuration</li><li>Bibliothèques obsolètes</li></ul></div></div>
+                        <div class="expandable"><button class="expand-btn">2. Réseau <span class="arrow">&#9660;</span></button><div class="expand-content"><ul><li>Protocoles non sécurisés</li><li>Ports ouverts non nécessaires</li><li>Absence de chiffrement des communications</li></ul></div></div>
+                        <div class="expandable"><button class="expand-btn">3. Humaines <span class="arrow">&#9660;</span></button><div class="expand-content"><ul><li>Mots de passe faibles</li><li>Divulgation d'informations sensibles</li><li>Ouverture de fichiers/liens suspects</li></ul></div></div>
+                        <div class="expandable"><button class="expand-btn">4. Matérielles <span class="arrow">&#9660;</span></button><div class="expand-content"><ul><li>Défauts de fabrication</li><li>Protection physique insuffisante</li></ul></div></div>
+                        <div class="expandable"><button class="expand-btn">5. Organisationnelles <span class="arrow">&#9660;</span></button><div class="expand-content"><ul><li>Absence de politique de sécurité</li><li>Mauvaise gestion des droits d'accès</li></ul></div></div>
+                        <div class="warning-box"><strong>Zero-day :</strong> Vulnérabilité exploitée <em>avant</em> qu'un correctif ne soit disponible.</div>
                     </div>
                 </section>
 
                 <section id="c1-menace">
                     <h4>4.2 Menace — Le Danger</h4>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Définition :</strong> Toute <strong>cause potentielle</strong> susceptible d'exploiter une vulnérabilité pour porter atteinte à la sécurité d'un système.
-                        </div>
+                        <div class="definition-box"><strong>Définition :</strong> Toute <strong>cause potentielle</strong> susceptible d'exploiter une vulnérabilité pour porter atteinte à la sécurité d'un système.</div>
                         <table class="styled-table">
                             <thead><tr><th>Type</th><th>Description</th><th>Exemple</th></tr></thead>
                             <tbody>
@@ -242,32 +208,20 @@
                                 <tr><td><strong>Environnementales</strong></td><td>Événements naturels</td><td>Incendie, inondation</td></tr>
                             </tbody>
                         </table>
-                        <div class="important-box">Une menace ne devient un <strong>risque réel</strong> que lorsqu'elle peut exploiter une vulnérabilité existante.</div>
                     </div>
                 </section>
 
                 <section id="c1-risque">
                     <h4>4.3 Risque</h4>
                     <div class="card">
-                        <div class="formula-box">
-                            <strong>Formule du risque :</strong><br>
-                            <span class="formula">Risque = Menace × Vulnérabilité × Impact</span>
-                        </div>
-                        <div class="example-box">
-                            <strong>Exemple — La maison :</strong>
-                            <ul>
-                                <li><strong>Vulnérabilité :</strong> fenêtre du rez-de-chaussée ouverte</li>
-                                <li><strong>Menace :</strong> cambrioleur dans le quartier</li>
-                                <li><strong>Risque :</strong> probabilité que le cambrioleur entre par la fenêtre</li>
-                            </ul>
-                        </div>
+                        <div class="formula-box"><strong>Formule du risque :</strong><br><span class="formula">Risque = Menace × Vulnérabilité × Impact</span></div>
+                        <div class="example-box"><strong>Exemple — La maison :</strong><ul><li><strong>Vulnérabilité :</strong> fenêtre du rez-de-chaussée ouverte</li><li><strong>Menace :</strong> cambrioleur dans le quartier</li><li><strong>Risque :</strong> probabilité que le cambrioleur entre par la fenêtre</li></ul></div>
                     </div>
                 </section>
 
                 <section id="c1-attaques">
                     <h3 class="section-title">5. Attaques informatiques</h3>
                     <div class="card">
-                        <h5>Types d'attaques selon l'impact :</h5>
                         <table class="styled-table">
                             <thead><tr><th>Type d'attaque</th><th>Description</th><th>Propriété affectée</th></tr></thead>
                             <tbody>
@@ -292,7 +246,7 @@
                 </section>
 
                 <section id="c1-5p">
-                    <h4>5.2 Principe des 5P — Structure d'une attaque</h4>
+                    <h4>5.2 Principe des 5P</h4>
                     <div class="card">
                         <div class="steps-flow steps-5p">
                             <div class="step step-5p">1. Préparation</div><div class="step-arrow">&#8594;</div>
@@ -301,16 +255,6 @@
                             <div class="step step-5p">4. Propagation</div><div class="step-arrow">&#8594;</div>
                             <div class="step step-5p">5. Préjudice</div>
                         </div>
-                        <div class="expandable"><button class="expand-btn">Détails de chaque phase <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <ul>
-                                <li><strong>Préparation :</strong> Collecte d'infos sur la cible — Nmap, Maltego, OpenVAS</li>
-                                <li><strong>Pénétration :</strong> Exploitation d'une vulnérabilité — Metasploit, Hydra, Exploit-DB</li>
-                                <li><strong>Persistance :</strong> Installation de backdoors — Netcat, Cobalt Strike</li>
-                                <li><strong>Propagation :</strong> Déplacement latéral, élévation de privilèges — Mimikatz, PsExec</li>
-                                <li><strong>Préjudice :</strong> Vol, modification, destruction — WannaCry, exfiltration de données</li>
-                            </ul>
-                        </div></div>
                     </div>
                 </section>
 
@@ -318,38 +262,24 @@
                     <h3 class="section-title">6. Modèle CIA & DAD</h3>
                     <div class="card">
                         <div class="cia-triad">
-                            <div class="cia-item cia-c"><h5>C — Confidentialité</h5><p>Seules les personnes <strong>autorisées</strong> peuvent accéder aux informations.</p><p><em>Menace DAD : Disclosure (Divulgation)</em></p></div>
-                            <div class="cia-item cia-i"><h5>I — Intégrité</h5><p>Les données ne sont <strong>pas modifiées</strong> de manière non autorisée.</p><p><em>Menace DAD : Alteration (Altération)</em></p></div>
-                            <div class="cia-item cia-a"><h5>A — Disponibilité</h5><p>Systèmes et données <strong>accessibles</strong> quand nécessaire.</p><p><em>Menace DAD : Denial (Destruction)</em></p></div>
+                            <div class="cia-item cia-c"><h5>C — Confidentialité</h5><p>Seules les personnes <strong>autorisées</strong> peuvent accéder aux informations.</p><p><em>Menace DAD : Disclosure</em></p></div>
+                            <div class="cia-item cia-i"><h5>I — Intégrité</h5><p>Les données ne sont <strong>pas modifiées</strong> de manière non autorisée.</p><p><em>Menace DAD : Alteration</em></p></div>
+                            <div class="cia-item cia-a"><h5>A — Disponibilité</h5><p>Systèmes et données <strong>accessibles</strong> quand nécessaire.</p><p><em>Menace DAD : Denial</em></p></div>
                         </div>
-                        <div class="remember-box"><strong>&#9989; À retenir :</strong> La sécurité consiste à <strong>protéger les propriétés CIA contre les effets DAD</strong>.</div>
                     </div>
                 </section>
 
                 <section id="c1-normes">
                     <h3 class="section-title">7. Normes et bonnes pratiques</h3>
                     <div class="card">
-                        <div class="expandable"><button class="expand-btn">ISO/IEC 27001 <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content"><p>Définit les exigences d'un <strong>SMSI</strong>. Norme certifiable basée sur le cycle PDCA. Orientée gestion des risques.</p></div></div>
-                        <div class="expandable"><button class="expand-btn">ISO/IEC 27002 <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content"><p>Guide de bonnes pratiques, catalogue de mesures de sécurité. Complément de la 27001.</p></div></div>
-                        <div class="expandable"><button class="expand-btn">NIST Cybersecurity Framework <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content"><p>Cadre américain flexible, gratuit et basé sur les risques. Adaptable à tout type d'organisation.</p></div></div>
-                        <div class="expandable"><button class="expand-btn">Cycle PDCA <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <div class="grid-2">
-                                <div class="mini-card accent-blue"><h6>Plan</h6><p>Identifier les risques et définir les mesures adaptées</p></div>
-                                <div class="mini-card accent-green"><h6>Do</h6><p>Déployer les mesures de sécurité définies</p></div>
-                                <div class="mini-card accent-purple"><h6>Check</h6><p>Contrôler l'efficacité des mesures mises en place</p></div>
-                                <div class="mini-card accent-red"><h6>Act</h6><p>Corriger les insuffisances et renforcer le dispositif</p></div>
-                            </div>
-                        </div></div>
+                        <div class="expandable"><button class="expand-btn">ISO/IEC 27001 <span class="arrow">&#9660;</span></button><div class="expand-content"><p>Définit les exigences d'un <strong>SMSI</strong>. Norme certifiable basée sur le cycle PDCA. Orientée gestion des risques.</p></div></div>
+                        <div class="expandable"><button class="expand-btn">ISO/IEC 27002 <span class="arrow">&#9660;</span></button><div class="expand-content"><p>Guide de bonnes pratiques, catalogue de mesures de sécurité. Complément de la 27001.</p></div></div>
+                        <div class="expandable"><button class="expand-btn">NIST Cybersecurity Framework <span class="arrow">&#9660;</span></button><div class="expand-content"><p>Cadre américain flexible, gratuit et basé sur les risques. Adaptable à tout type d'organisation.</p></div></div>
                     </div>
                 </section>
 
                 <!-- ==================== CHAPITRE 2 ==================== -->
                 <h2 class="chapter-title" id="chapitre2">Chapitre 2 : La Cryptographie</h2>
-
                 <div class="card objectives-card">
                     <h3>&#127919; Objectifs pédagogiques</h3>
                     <ul>
@@ -363,11 +293,7 @@
                 <section id="c2-intro">
                     <h3 class="section-title">1. Introduction & Cryptologie</h3>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Cryptologie</strong> = la science du secret. Elle regroupe :<br>
-                            1. <strong>Cryptographie</strong> (défensive) : protéger les informations par chiffrement<br>
-                            2. <strong>Cryptanalyse</strong> (offensive) : analyser et casser les systèmes cryptographiques
-                        </div>
+                        <div class="definition-box"><strong>Cryptologie</strong> = la science du secret. Elle regroupe :<br>1. <strong>Cryptographie</strong> (défensive) : protéger les informations par chiffrement<br>2. <strong>Cryptanalyse</strong> (offensive) : analyser et casser les systèmes cryptographiques</div>
                         <div class="grid-2">
                             <div class="mini-card accent-blue"><h6>Confidentialité</h6><p>Lecture réservée aux personnes autorisées</p></div>
                             <div class="mini-card accent-green"><h6>Intégrité</h6><p>Le message n'a pas été altéré</p></div>
@@ -380,9 +306,7 @@
                 <section id="c2-symetrique">
                     <h3 class="section-title">2. Chiffrement symétrique</h3>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Principe :</strong> Utilise la <strong>même clé secrète</strong> pour chiffrer et déchiffrer. Rapide et adapté aux volumes importants de données.
-                        </div>
+                        <div class="definition-box"><strong>Principe :</strong> Utilise la <strong>même clé secrète</strong> pour chiffrer et déchiffrer. Rapide et adapté aux volumes importants de données.</div>
                         <div class="warning-box"><strong>Problème principal :</strong> La <strong>distribution de la clé</strong> — comment la partager de façon sécurisée ?</div>
                         <h5>Standards modernes :</h5>
                         <ul>
@@ -396,48 +320,24 @@
                 <section id="c2-cesar">
                     <h4>2.1 Code de César</h4>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Principe :</strong> Chiffrement par <strong>substitution</strong> — chaque lettre est décalée de <em>k</em> positions dans l'alphabet.
-                        </div>
-                        <div class="formula-box">
-                            <strong>Chiffrement :</strong> <span class="formula">C = (P + k) mod 26</span><br>
-                            <strong>Déchiffrement :</strong> <span class="formula">P = (C - k) mod 26</span>
-                        </div>
-                        <div class="example-box">
-                            <strong>Exemple avec k = 3 :</strong> BONJOUR<br>
-                            B(1)+3=E, O(14)+3=R, N(13)+3=Q, J(9)+3=M, O(14)+3=R, U(20)+3=X, R(17)+3=U<br>
-                            <strong>Résultat : ERQMRXU</strong>
-                        </div>
-                        <div class="warning-box"><strong>Limites :</strong> Cassable par force brute (25 décalages possibles) et par analyse fréquentielle.</div>
+                        <div class="formula-box"><strong>Chiffrement :</strong> <span class="formula">C = (P + k) mod 26</span>&nbsp;&nbsp;&nbsp;<strong>Déchiffrement :</strong> <span class="formula">P = (C - k) mod 26</span></div>
+                        <div class="example-box"><strong>Exemple avec k = 3 :</strong> BONJOUR → <strong>ERQMRXU</strong></div>
+                        <div class="warning-box"><strong>Limites :</strong> Cassable par force brute (25 décalages) et par analyse fréquentielle.</div>
                     </div>
                 </section>
 
                 <section id="c2-vigenere">
                     <h4>2.2 Chiffre de Vigenère</h4>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Principe :</strong> Clé composée de plusieurs lettres — chaque lettre est chiffrée avec un décalage différent selon la clé répétée.
-                        </div>
-                        <div class="formula-box">
-                            <strong>Chiffrement :</strong> <span class="formula">C<sub>i</sub> = (P<sub>i</sub> + K<sub>i</sub>) mod 26</span><br>
-                            <strong>Déchiffrement :</strong> <span class="formula">P<sub>i</sub> = (C<sub>i</sub> - K<sub>i</sub>) mod 26</span>
-                        </div>
-                        <div class="example-box">
-                            <strong>Exemple :</strong> Message = BONJOUR, Clé = CLE<br>
-                            B(1)+C(2)=D, O(14)+L(11)=Z, N(13)+E(4)=R, J(9)+C(2)=L, O(14)+L(11)=Z, U(20)+E(4)=Y, R(17)+C(2)=T<br>
-                            <strong>Résultat : DZRLZYT</strong>
-                        </div>
+                        <div class="formula-box"><strong>Chiffrement :</strong> <span class="formula">C<sub>i</sub> = (P<sub>i</sub> + K<sub>i</sub>) mod 26</span></div>
+                        <div class="example-box"><strong>Exemple :</strong> Message = BONJOUR, Clé = CLE → <strong>DZRLZYT</strong></div>
                     </div>
                 </section>
 
                 <section id="c2-asymetrique">
                     <h3 class="section-title">3. Chiffrement asymétrique</h3>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Principe :</strong> Paire de clés mathématiquement liées :<br>
-                            • <strong>Clé publique</strong> : chiffrement — peut être diffusée librement<br>
-                            • <strong>Clé privée</strong> : déchiffrement — strictement secrète
-                        </div>
+                        <div class="definition-box"><strong>Principe :</strong> Paire de clés mathématiquement liées :<br>• <strong>Clé publique</strong> : chiffrement<br>• <strong>Clé privée</strong> : déchiffrement — strictement secrète</div>
                         <div class="grid-2">
                             <div class="mini-card accent-blue"><h6>Scénario 1 : Confidentialité</h6><p>Alice chiffre avec la <strong>clé publique de Bob</strong>. Seul Bob déchiffre avec sa <strong>clé privée</strong>.</p></div>
                             <div class="mini-card accent-green"><h6>Scénario 2 : Authentification</h6><p>Alice signe avec sa <strong>clé privée</strong>. Bob vérifie avec la <strong>clé publique d'Alice</strong>.</p></div>
@@ -448,7 +348,6 @@
                 <section id="c2-rsa">
                     <h4>3.1 Algorithme RSA</h4>
                     <div class="card">
-                        <h5>Génération des clés :</h5>
                         <ol>
                             <li>Choisir deux nombres premiers distincts <strong>p</strong> et <strong>q</strong></li>
                             <li><span class="formula">n = p × q</span> (module de chiffrement)</li>
@@ -456,32 +355,15 @@
                             <li>Choisir <strong>e</strong> tel que <span class="formula">gcd(e, φ(n)) = 1</span></li>
                             <li>Calculer <strong>d</strong> tel que <span class="formula">e × d ≡ 1 (mod φ(n))</span></li>
                         </ol>
-                        <div class="formula-box">
-                            <strong>Chiffrement :</strong> <span class="formula">C = M<sup>e</sup> mod n</span>&nbsp;&nbsp;&nbsp;
-                            <strong>Déchiffrement :</strong> <span class="formula">M = C<sup>d</sup> mod n</span>
-                        </div>
-                        <div class="example-box">
-                            <strong>Exemple : p=17, q=11</strong><br>
-                            n = 187 | φ(n) = 160 | e = 7 | d = 23<br>
-                            <strong>Clé publique : (7, 187)</strong> — <strong>Clé privée : (23, 187)</strong>
-                        </div>
-                        <div class="remember-box">En pratique : <strong>asymétrique pour échanger la clé + symétrique pour chiffrer les données</strong> (hybride).</div>
+                        <div class="formula-box"><strong>Chiffrement :</strong> <span class="formula">C = M<sup>e</sup> mod n</span>&nbsp;&nbsp;&nbsp;<strong>Déchiffrement :</strong> <span class="formula">M = C<sup>d</sup> mod n</span></div>
+                        <div class="example-box"><strong>Exemple : p=17, q=11</strong><br>n = 187 | φ(n) = 160 | e = 7 | d = 23<br><strong>Clé publique : (7, 187)</strong> — <strong>Clé privée : (23, 187)</strong></div>
                     </div>
                 </section>
 
                 <section id="c2-hachage">
                     <h3 class="section-title">4. Fonctions de hachage</h3>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Définition :</strong> Algorithme transformant une donnée en une <strong>empreinte de taille fixe</strong> (hash). Transformation <strong>non réversible</strong>.
-                        </div>
-                        <h5>Propriétés essentielles :</h5>
-                        <ul>
-                            <li><strong>Déterminisme</strong> : même entrée → même hash</li>
-                            <li><strong>Résistance à la préimage</strong> : impossible de retrouver le message original</li>
-                            <li><strong>Résistance à la collision</strong> : très difficile de trouver deux messages avec le même hash</li>
-                            <li><strong>Effet avalanche</strong> : toute modification minime change complètement le hash</li>
-                        </ul>
+                        <div class="definition-box"><strong>Définition :</strong> Algorithme transformant une donnée en une <strong>empreinte de taille fixe</strong> (hash). Transformation <strong>non réversible</strong>.</div>
                         <table class="styled-table">
                             <thead><tr><th>Fonction</th><th>Taille du hash</th><th>Sécurité</th></tr></thead>
                             <tbody>
@@ -496,27 +378,18 @@
                 <section id="c2-signature">
                     <h3 class="section-title">5. Signature numérique & PKI</h3>
                     <div class="card">
-                        <h5>Processus de signature :</h5>
                         <div class="steps-flow">
                             <div class="step">Message</div><div class="step-arrow">→</div>
                             <div class="step">Hash (SHA-256)</div><div class="step-arrow">→</div>
-                            <div class="step">Chiffré avec clé privée</div><div class="step-arrow">→</div>
+                            <div class="step">Chiffré clé privée</div><div class="step-arrow">→</div>
                             <div class="step">Signature ✓</div>
                         </div>
-                        <h5>PKI — Infrastructure à clé publique :</h5>
-                        <ol>
-                            <li><strong>Certificat numérique (X.509)</strong> : associe identité + clé publique</li>
-                            <li><strong>RA</strong> (Registration Authority) : vérifie l'identité</li>
-                            <li><strong>CA</strong> (Certification Authority) : génère et signe les certificats</li>
-                            <li><strong>CRL</strong> : liste de révocation de certificats</li>
-                        </ol>
                         <div class="remember-box">La PKI protège contre les attaques <strong>Man-in-the-Middle (MITM)</strong>.</div>
                     </div>
                 </section>
 
                 <!-- ==================== CHAPITRE 3 ==================== -->
                 <h2 class="chapter-title" id="chapitre3">Chapitre 3 : Sécurité des systèmes</h2>
-
                 <div class="card objectives-card">
                     <h3>&#127919; Objectifs pédagogiques</h3>
                     <ul>
@@ -527,13 +400,13 @@
                 </div>
 
                 <section id="c3-intro">
-                    <h3 class="section-title">Introduction — Pourquoi sécuriser un système ?</h3>
+                    <h3 class="section-title">Introduction</h3>
                     <div class="card">
                         <div class="grid-2">
                             <div class="mini-card accent-blue"><h6>&#128274; Protection des données</h6><p>Éviter la perte, le vol ou la fuite d'informations sensibles.</p></div>
                             <div class="mini-card accent-red"><h6>&#128683; Prévention des accès non autorisés</h6><p>Empêcher les utilisateurs malveillants d'entrer dans le système.</p></div>
                             <div class="mini-card accent-green"><h6>&#9989; Continuité du fonctionnement</h6><p>Assurer la disponibilité et la fiabilité des services.</p></div>
-                            <div class="mini-card accent-purple"><h6>&#128269; Détection des activités suspectes</h6><p>Identifier rapidement les tentatives d'attaque ou comportements anormaux.</p></div>
+                            <div class="mini-card accent-purple"><h6>&#128269; Détection des activités suspectes</h6><p>Identifier rapidement les tentatives d'attaque.</p></div>
                         </div>
                     </div>
                 </section>
@@ -541,157 +414,68 @@
                 <section id="c3-controle">
                     <h3 class="section-title">I. Contrôle d'accès</h3>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Définition :</strong> Mécanisme permettant de gérer l'accès aux ressources (fichiers, dossiers, applications, bases de données, services système) dans un système informatique — <strong>qui peut accéder à quoi et dans quelles conditions</strong>.
-                        </div>
-                        <h5>Étapes du contrôle d'accès :</h5>
                         <div class="steps-flow">
                             <div class="step">1. Identification<br><small>Nom d'utilisateur</small></div><div class="step-arrow">→</div>
                             <div class="step">2. Authentification<br><small>Vérification identité</small></div><div class="step-arrow">→</div>
                             <div class="step">3. Autorisation<br><small>Droits d'accès</small></div>
                         </div>
-                        <h5>Types de contrôle d'accès :</h5>
                         <table class="styled-table">
                             <thead><tr><th>Modèle</th><th>Principe</th><th>Exemple</th></tr></thead>
                             <tbody>
-                                <tr><td><strong>DAC</strong> (Discretionary)</td><td>Contrôle par le propriétaire de la ressource</td><td>Permissions fichiers Linux/Windows</td></tr>
-                                <tr><td><strong>MAC</strong> (Mandatory)</td><td>Règles fixes imposées par le système</td><td>Systèmes militaires, documents classifiés</td></tr>
-                                <tr><td><strong>RBAC</strong> (Role-Based)</td><td>Contrôle basé sur les rôles</td><td>Entreprises (admin, manager, utilisateur)</td></tr>
-                                <tr><td><strong>ABAC</strong> (Attribute-Based)</td><td>Règles dynamiques basées sur des attributs</td><td>Cloud, systèmes modernes</td></tr>
+                                <tr><td><strong>DAC</strong></td><td>Contrôle par le propriétaire</td><td>Permissions fichiers Linux/Windows</td></tr>
+                                <tr><td><strong>MAC</strong></td><td>Règles fixes imposées par le système</td><td>Systèmes militaires</td></tr>
+                                <tr><td><strong>RBAC</strong></td><td>Contrôle basé sur les rôles</td><td>Entreprises (admin, manager…)</td></tr>
+                                <tr><td><strong>ABAC</strong></td><td>Règles dynamiques par attributs</td><td>Cloud, systèmes modernes</td></tr>
                             </tbody>
                         </table>
-                        <div class="expandable"><button class="expand-btn">Détails DAC — Discretionary Access Control <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <p>Le propriétaire d'une ressource décide qui peut y accéder et quelles actions sont autorisées.</p>
-                            <p><strong>Caractéristiques :</strong> Flexible et simple à gérer, mais peut être moins sécurisé.</p>
-                            <p><strong>Exemple :</strong> Un utilisateur peut définir les permissions d'un fichier qu'il possède sous Linux.</p>
-                        </div></div>
-                        <div class="expandable"><button class="expand-btn">Détails MAC — Mandatory Access Control <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <p>Les règles fixes sont imposées par le système ou une politique centrale. Les utilisateurs ne peuvent pas modifier ces règles.</p>
-                            <p>Chaque ressource et utilisateur possède un <strong>niveau de sécurité</strong>. L'accès est accordé uniquement si le niveau correspond.</p>
-                            <p><strong>Exemples :</strong> Contexte gouvernemental (documents TOP SECRET), systèmes militaires.</p>
-                        </div></div>
-                        <div class="expandable"><button class="expand-btn">Détails RBAC — Role-Based Access Control <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <p>Les permissions sont attribuées à des <strong>rôles</strong>, et les utilisateurs reçoivent un ou plusieurs rôles. Simplifie la gestion en entreprise.</p>
-                            <p><strong>Exemple :</strong> Un employé avec le rôle « comptable » a accès aux données financières mais pas aux RH.</p>
-                        </div></div>
-                        <div class="expandable"><button class="expand-btn">Détails ABAC — Attribute-Based Access Control <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <p>Les permissions sont accordées selon des <strong>attributs</strong> liés à l'utilisateur, la ressource, l'action et le contexte. Les décisions sont basées sur des règles dynamiques.</p>
-                            <p><strong>Exemple :</strong> Un employé peut accéder à certaines données financières seulement s'il est dans le bureau et pendant les heures de travail.</p>
-                        </div></div>
                     </div>
                 </section>
 
                 <section id="c3-comptes">
-                    <h3 class="section-title">II. Gestion des comptes utilisateurs et des permissions</h3>
+                    <h3 class="section-title">II. Gestion des comptes et permissions</h3>
                     <div class="card">
-                        <h4>1. Comptes utilisateurs</h4>
-                        <p>Un <strong>compte utilisateur</strong> permet d'identifier et d'authentifier une personne sur un système. Chaque compte possède : un <strong>identifiant</strong>, un <strong>mot de passe</strong>, des <strong>droits d'accès</strong> et un <strong>répertoire personnel</strong>.</p>
-                        <h4>2. Types de permissions</h4>
                         <div class="grid-3">
-                            <div class="mini-card accent-blue"><h6>&#128214; Lecture (r)</h6><p>Voir le contenu d'un fichier. Valeur numérique : <strong>4</strong></p></div>
-                            <div class="mini-card accent-green"><h6>&#9998; Écriture (w)</h6><p>Modifier ou supprimer. Valeur numérique : <strong>2</strong></p></div>
-                            <div class="mini-card accent-red"><h6>&#9881; Exécution (x)</h6><p>Exécuter un fichier. Valeur numérique : <strong>1</strong></p></div>
+                            <div class="mini-card accent-blue"><h6>&#128214; Lecture (r)</h6><p>Voir le contenu. Valeur : <strong>4</strong></p></div>
+                            <div class="mini-card accent-green"><h6>&#9998; Écriture (w)</h6><p>Modifier ou supprimer. Valeur : <strong>2</strong></p></div>
+                            <div class="mini-card accent-red"><h6>&#9881; Exécution (x)</h6><p>Exécuter un fichier. Valeur : <strong>1</strong></p></div>
                         </div>
-                        <h4>3. Représentation numérique (Linux)</h4>
-                        <div class="example-box">
-                            <strong>Valeurs :</strong> r=4, w=2, x=1 (addition pour combiner)<br><br>
-                            <strong>Exemple :</strong> <code>chmod 755 fichier.sh</code><br>
-                            • 7 = rwx (utilisateur : lecture + écriture + exécution)<br>
-                            • 5 = r-x (groupe : lecture + exécution)<br>
-                            • 5 = r-x (autres : lecture + exécution)<br><br>
-                            <strong>Lecture de -rwxr--r-- :</strong><br>
-                            • Utilisateur : rwx (lecture + écriture + exécution)<br>
-                            • Groupe : r-- (lecture seule)<br>
-                            • Autres : r-- (lecture seule)
-                        </div>
-                        <h4>4. Gestion des permissions</h4>
-                        <ul>
-                            <li><strong>Principe du moindre privilège</strong> : accorder uniquement les droits nécessaires</li>
-                            <li><strong>Séparation des tâches</strong> : limiter le pouvoir d'un seul utilisateur</li>
-                            <li><strong>Révision régulière</strong> des droits accordés</li>
-                        </ul>
+                        <div class="example-box"><strong>Exemple :</strong> <code>chmod 755 fichier.sh</code><br>7=rwx (propriétaire) · 5=r-x (groupe) · 5=r-x (autres)</div>
                     </div>
                 </section>
 
                 <section id="c3-logs">
                     <h3 class="section-title">III. Journalisation (logs) et audit</h3>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Les logs</strong> sont des enregistrements chronologiques des événements système permettant de tracer les activités et détecter les incidents.
-                        </div>
-                        <h5>Types de journalisation :</h5>
                         <div class="grid-2">
-                            <div class="mini-card accent-blue"><h6>&#128187; Logs Système</h6><p>Événements du système d'exploitation : démarrage, erreurs, services.</p></div>
-                            <div class="mini-card accent-red"><h6>&#128272; Logs d'Authentification</h6><p>Connexions réussies/échouées, accès SSH, sudo.</p></div>
-                            <div class="mini-card accent-green"><h6>&#128202; Logs d'Application</h6><p>Activités des logiciels : web, base de données, erreurs applicatives.</p></div>
-                            <div class="mini-card accent-purple"><h6>&#128246; Logs Réseau</h6><p>Trafic réseau, connexions entrantes et sortantes.</p></div>
+                            <div class="mini-card accent-blue"><h6>Logs Système</h6><p>Événements OS : démarrage, erreurs, services.</p></div>
+                            <div class="mini-card accent-red"><h6>Logs d'Authentification</h6><p>Connexions réussies/échouées, SSH, sudo.</p></div>
+                            <div class="mini-card accent-green"><h6>Logs d'Application</h6><p>Activités web, base de données, erreurs applicatives.</p></div>
+                            <div class="mini-card accent-purple"><h6>Logs Réseau</h6><p>Trafic réseau, connexions entrantes et sortantes.</p></div>
                         </div>
-                        <h5>Audit de sécurité</h5>
-                        <div class="definition-box">L'audit consiste à <strong>analyser les logs pour détecter des activités suspectes</strong>.</div>
-                        <h5>Objectifs de l'audit :</h5>
-                        <ul>
-                            <li>Détecter des intrusions</li>
-                            <li>Identifier des comportements anormaux</li>
-                            <li>Reconstituer une attaque (forensic)</li>
-                        </ul>
-                        <h5>Ce qu'on cherche dans les logs :</h5>
-                        <ul>
-                            <li>Tentatives de connexion échouées répétées</li>
-                            <li>Accès à des fichiers sensibles inhabituels</li>
-                            <li>Activités à des heures inhabituelles</li>
-                            <li>Erreurs critiques récurrentes</li>
-                        </ul>
                     </div>
                 </section>
 
                 <section id="c3-fichiers">
                     <h3 class="section-title">IV. Sécurisation du système de fichiers</h3>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Définition :</strong> Le système de fichiers est l'ensemble des mécanismes permettant de <strong>stocker, organiser et gérer les données</strong> sur un disque. Il contient les fichiers système, les applications et les données utilisateurs. S'il est compromis → <strong>tout le système est en danger</strong>.
-                        </div>
-                        <h5>Mesures de sécurisation :</h5>
                         <ul>
                             <li><strong>Chiffrement des fichiers sensibles</strong> (BitLocker, VeraCrypt, LUKS)</li>
-                            <li><strong>Permissions strictes</strong> sur les fichiers système (lecture seule pour les non-admins)</li>
-                            <li><strong>Intégrité des fichiers</strong> via hachage SHA-256 (surveillance des modifications)</li>
-                            <li><strong>Partitionnement</strong> : séparer les partitions système, données, swap</li>
-                            <li><strong>Systèmes de fichiers sécurisés</strong> : ext4 + journalisation, NTFS avec ACL</li>
+                            <li><strong>Permissions strictes</strong> sur les fichiers système</li>
+                            <li><strong>Intégrité des fichiers</strong> via hachage SHA-256</li>
+                            <li><strong>Partitionnement</strong> : séparer partitions système, données, swap</li>
                         </ul>
-                        <div class="important-box">
-                            <strong>Outils IDS/HIDS :</strong> Tripwire, AIDE — surveillent les modifications non autorisées du système de fichiers.
-                        </div>
+                        <div class="important-box"><strong>Outils IDS/HIDS :</strong> Tripwire, AIDE — surveillent les modifications non autorisées.</div>
                     </div>
                 </section>
 
                 <section id="c3-maj">
-                    <h3 class="section-title">V. Mises à jour et correctifs de sécurité</h3>
+                    <h3 class="section-title">V. Mises à jour et correctifs</h3>
                     <div class="card">
-                        <div class="warning-box">
-                            <strong>&#10071; Que se passe-t-il si on ne met pas à jour ?</strong><br>
-                            Piratage · Ransomware · Perte de données · Compromission du système
-                        </div>
-                        <h5>Types de mises à jour :</h5>
+                        <div class="warning-box"><strong>&#10071; Sans mises à jour :</strong> Piratage · Ransomware · Perte de données · Compromission du système</div>
                         <ul>
-                            <li><strong>Correctifs de sécurité (patches)</strong> : corrigent des vulnérabilités spécifiques — PRIORITÉ ABSOLUE</li>
-                            <li><strong>Mises à jour fonctionnelles</strong> : ajout de fonctionnalités</li>
-                            <li><strong>Mises à jour majeures</strong> : nouvelles versions du système</li>
-                        </ul>
-                        <h5>Risques liés aux mises à jour :</h5>
-                        <ul>
-                            <li>Incompatibilité logicielle</li>
-                            <li>Bugs introduits</li>
-                            <li>Interruption de service</li>
-                        </ul>
-                        <h5>Bonnes pratiques :</h5>
-                        <ul>
-                            <li>Appliquer les mises à jour <strong>régulièrement</strong></li>
+                            <li><strong>Correctifs de sécurité (patches)</strong> — PRIORITÉ ABSOLUE</li>
                             <li>Activer les mises à jour <strong>automatiques</strong></li>
-                            <li>Tester en environnement de <strong>préproduction</strong> avant déploiement</li>
+                            <li>Tester en <strong>préproduction</strong> avant déploiement</li>
                             <li>Faire des <strong>sauvegardes</strong> avant toute mise à jour</li>
                         </ul>
                     </div>
@@ -700,34 +484,12 @@
                 <section id="c3-malware">
                     <h3 class="section-title">VI. Malware</h3>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Malware</strong> (Malicious Software) : tout logiciel conçu pour nuire à un système, voler des données ou perturber le fonctionnement normal.
-                        </div>
-                        <h5>Types de malware :</h5>
-                        <div class="expandable"><button class="expand-btn">&#128027; Virus <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content"><p>S'attache à un fichier légitime et se propage en infectant d'autres fichiers lors de l'exécution. Nécessite une action humaine pour se diffuser.</p></div></div>
-                        <div class="expandable"><button class="expand-btn">&#129052; Vers (Worm) <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content"><p>Se propage <strong>automatiquement</strong> sans intervention humaine via le réseau. Exemple : WannaCry, Conficker.</p></div></div>
-                        <div class="expandable"><button class="expand-btn">&#129461; Cheval de Troie (Trojan) <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content"><p>Se déguise en logiciel légitime. Une fois installé, ouvre une backdoor pour l'attaquant. Ne se réplique pas seul.</p></div></div>
-                        <div class="expandable"><button class="expand-btn">&#128274; Ransomware <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content"><p>Chiffre les fichiers de la victime et exige une rançon pour la clé de déchiffrement. Exemple : WannaCry, Ryuk, Locky.</p></div></div>
-                        <div class="expandable"><button class="expand-btn">&#128065; Spyware <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content"><p>Collecte des informations (mots de passe, frappes clavier) à l'insu de la victime. Exemple : keylogger.</p></div></div>
-                        <div class="expandable"><button class="expand-btn">&#128165; Adware <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content"><p>Affiche des publicités intrusives. Peut ralentir le système et collecter des données de navigation.</p></div></div>
-                        <div class="expandable"><button class="expand-btn">&#128737; Rootkit <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content"><p>Cache sa présence dans le système et donne un accès administrateur à l'attaquant. <strong>Très difficile à détecter</strong> car modifie le noyau du système.</p></div></div>
-                        <div class="expandable"><button class="expand-btn">&#127760; Bot / Botnet <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content"><p>Machine infectée contrôlée à distance par un pirate. Utilisée pour des attaques DDoS, envoi de spam ou minage de crypto-monnaies.</p></div></div>
-                        <h5>Protection contre les malware :</h5>
-                        <ul>
-                            <li>Antivirus/Antimalware à jour</li>
-                            <li>Firewall et IDS/IPS</li>
-                            <li>Mises à jour régulières du système</li>
-                            <li>Sensibilisation des utilisateurs (ne pas ouvrir de liens/pièces jointes suspects)</li>
-                            <li>Sauvegardes régulières</li>
-                        </ul>
+                        <div class="expandable"><button class="expand-btn">&#128027; Virus <span class="arrow">&#9660;</span></button><div class="expand-content"><p>S'attache à un fichier légitime et se propage lors de l'exécution. Nécessite une action humaine.</p></div></div>
+                        <div class="expandable"><button class="expand-btn">&#129052; Ver (Worm) <span class="arrow">&#9660;</span></button><div class="expand-content"><p>Se propage <strong>automatiquement</strong> sans intervention humaine via le réseau. Exemple : WannaCry.</p></div></div>
+                        <div class="expandable"><button class="expand-btn">&#129461; Cheval de Troie (Trojan) <span class="arrow">&#9660;</span></button><div class="expand-content"><p>Se déguise en logiciel légitime. Ouvre une backdoor pour l'attaquant.</p></div></div>
+                        <div class="expandable"><button class="expand-btn">&#128274; Ransomware <span class="arrow">&#9660;</span></button><div class="expand-content"><p>Chiffre les fichiers et exige une rançon. Exemple : WannaCry, Ryuk, Locky.</p></div></div>
+                        <div class="expandable"><button class="expand-btn">&#128065; Spyware <span class="arrow">&#9660;</span></button><div class="expand-content"><p>Collecte des informations (mots de passe, frappes) à l'insu de la victime.</p></div></div>
+                        <div class="expandable"><button class="expand-btn">&#128737; Rootkit <span class="arrow">&#9660;</span></button><div class="expand-content"><p>Se cache dans le noyau du système. <strong>Très difficile à détecter.</strong></p></div></div>
                     </div>
                 </section>
 
@@ -737,12 +499,10 @@
                         <table class="styled-table">
                             <thead><tr><th>Outil</th><th>Catégorie</th><th>Usage</th></tr></thead>
                             <tbody>
-                                <tr><td><strong>Nmap</strong></td><td>Scan réseau</td><td>Découverte d'hôtes et de services exposés</td></tr>
+                                <tr><td><strong>Nmap</strong></td><td>Scan réseau</td><td>Découverte d'hôtes et services exposés</td></tr>
                                 <tr><td><strong>Wireshark</strong></td><td>Analyse de trafic</td><td>Capture et analyse de paquets réseau</td></tr>
-                                <tr><td><strong>Metasploit</strong></td><td>Tests d'intrusion</td><td>Exploitation de vulnérabilités connues</td></tr>
-                                <tr><td><strong>Nessus / OpenVAS</strong></td><td>Scanner de vulnérabilités</td><td>Analyse automatique des failles</td></tr>
-                                <tr><td><strong>Tripwire / AIDE</strong></td><td>IDS (Hôte)</td><td>Détection de modifications de fichiers</td></tr>
-                                <tr><td><strong>Snort / Suricata</strong></td><td>IDS/IPS (Réseau)</td><td>Détection et prévention d'intrusions réseau</td></tr>
+                                <tr><td><strong>Metasploit</strong></td><td>Tests d'intrusion</td><td>Exploitation de vulnérabilités</td></tr>
+                                <tr><td><strong>Snort / Suricata</strong></td><td>IDS/IPS</td><td>Détection et prévention d'intrusions réseau</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -750,13 +510,11 @@
 
                 <!-- ==================== CHAPITRE 4 ==================== -->
                 <h2 class="chapter-title" id="chapitre4">Chapitre 4 : Sécurité des bases de données</h2>
-
                 <div class="card objectives-card">
                     <h3>&#127919; Objectifs pédagogiques</h3>
                     <ul>
                         <li>Comprendre les risques liés aux bases de données</li>
                         <li>Mettre en place des mécanismes de contrôle d'accès</li>
-                        <li>Sécuriser les connexions à la base de données</li>
                         <li>Prévenir les injections SQL</li>
                         <li>Chiffrer les données sensibles et mettre en place des sauvegardes sécurisées</li>
                     </ul>
@@ -765,266 +523,345 @@
                 <section id="c4-intro">
                     <h3 class="section-title">Introduction</h3>
                     <div class="card">
-                        <p>Une <strong>base de données</strong> est un élément critique d'un système informatique. Elle contient souvent des <strong>informations sensibles et stratégiques</strong>.</p>
-                        <div class="grid-3">
-                            <div class="mini-card accent-red"><h6>Données personnelles</h6><p>Noms, adresses, numéros de sécurité sociale</p></div>
-                            <div class="mini-card accent-blue"><h6>Informations bancaires</h6><p>Numéros de carte, comptes, transactions</p></div>
-                            <div class="mini-card accent-purple"><h6>Données médicales</h6><p>Dossiers patients, ordonnances</p></div>
-                        </div>
-                        <h5>Sécuriser une BD : objectifs CIA</h5>
-                        <div class="grid-3">
-                            <div class="mini-card cia-c"><h6>Confidentialité</h6><p>Détecter ou empêcher les accès non autorisés aux données.</p></div>
-                            <div class="mini-card cia-i"><h6>Intégrité</h6><p>Prévenir les modifications illicites (pannes, erreurs, sabotages).</p></div>
-                            <div class="mini-card cia-a"><h6>Disponibilité</h6><p>Empêcher les dénis de service — chaque utilisateur autorisé doit accéder aux données dans un délai raisonnable.</p></div>
-                        </div>
-                        <div class="important-box">
-                            <strong>Protection contre les attaques :</strong> Authentification + Contrôle d'accès + Chiffrement des données + Chiffrement des communications + Audit + Sécurisation des applications.
-                        </div>
+                        <div class="important-box"><strong>Protection contre les attaques :</strong> Authentification + Contrôle d'accès + Chiffrement + Audit + Sécurisation des applications.</div>
                     </div>
                 </section>
 
                 <section id="c4-acces">
                     <h3 class="section-title">I. Contrôle d'accès et gestion des privilèges</h3>
                     <div class="card">
-                        <h4>1. Contrôle d'accès</h4>
-                        <p>Un <strong>contrôleur d'accès</strong> reçoit chaque requête et la compare aux règles d'accès définies par la politique de sécurité. Il peut <strong>autoriser</strong>, <strong>refuser</strong> ou <strong>modifier</strong> la requête.</p>
-
-                        <h4>2. Gestion des privilèges SQL</h4>
-                        <h5>Types de privilèges :</h5>
-                        <div class="expandable"><button class="expand-btn">Privilèges système <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <p>Permettent d'effectuer des actions sur l'ensemble du système.</p>
-                            <div class="code-block"><code>-- Créer un utilisateur
-CREATE USER 'user1'@'localhost' IDENTIFIED BY 'motdepasse';
--- Accorder un privilège système
-GRANT CREATE SESSION TO user1;
-GRANT CREATE TABLE TO user1;</code></div>
-                        </div></div>
-                        <div class="expandable"><button class="expand-btn">Privilèges objets <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <p>Opérations sur les objets de la base (SELECT, INSERT, UPDATE, DELETE, EXECUTE)</p>
-                            <div class="code-block"><code>-- Accorder des privilèges sur une table
-GRANT SELECT, UPDATE ON table_name TO user_name;
--- Accorder tous les privilèges
-GRANT ALL PRIVILEGES ON database.* TO 'user1'@'localhost';</code></div>
-                        </div></div>
-                        <div class="expandable"><button class="expand-btn">Gestion des rôles <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <p>Un <strong>rôle</strong> est un ensemble de privilèges qu'on attribue à un utilisateur. Simplifie la gestion des droits.</p>
-                            <div class="code-block"><code>-- Créer un rôle
-CREATE ROLE gestionnaire;
--- Attribuer des privilèges au rôle
+                        <div class="expandable"><button class="expand-btn">Privilèges système <span class="arrow">&#9660;</span></button><div class="expand-content"><div class="code-block"><code>CREATE USER 'user1'@'localhost' IDENTIFIED BY 'motdepasse';
+GRANT CREATE SESSION TO user1;</code></div></div></div>
+                        <div class="expandable"><button class="expand-btn">Privilèges objets <span class="arrow">&#9660;</span></button><div class="expand-content"><div class="code-block"><code>GRANT SELECT, UPDATE ON table_name TO user_name;
+GRANT ALL PRIVILEGES ON database.* TO 'user1'@'localhost';</code></div></div></div>
+                        <div class="expandable"><button class="expand-btn">Gestion des rôles <span class="arrow">&#9660;</span></button><div class="expand-content"><div class="code-block"><code>CREATE ROLE gestionnaire;
 GRANT SELECT, UPDATE ON produits TO gestionnaire;
--- Attribuer le rôle à un utilisateur
-GRANT gestionnaire TO youssef;</code></div>
-                        </div></div>
-                        <div class="expandable"><button class="expand-btn">Révocation des privilèges <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <div class="code-block"><code>-- Retirer un privilège spécifique
-REVOKE INSERT ON table_name FROM user_name;
--- Retirer tous les privilèges
-REVOKE ALL PRIVILEGES ON table_name FROM user_name;</code></div>
-                        </div></div>
-                        <div class="remember-box"><strong>Principe du moindre privilège :</strong> N'accorder que les droits strictement nécessaires à chaque utilisateur pour accomplir sa mission.</div>
+GRANT gestionnaire TO youssef;</code></div></div></div>
+                        <div class="remember-box"><strong>Principe du moindre privilège :</strong> N'accorder que les droits strictement nécessaires.</div>
                     </div>
                 </section>
 
                 <section id="c4-connexions">
                     <h3 class="section-title">II. Sécurisation des connexions</h3>
                     <div class="card">
-                        <div class="definition-box">La sécurisation des connexions est un <strong>pilier fondamental</strong> de la sécurité des bases de données. Elle repose sur une combinaison d'authentification, chiffrement et contrôle d'accès.</div>
-                        <h5>Mécanismes de sécurisation :</h5>
-                        <div class="expandable"><button class="expand-btn">3.1 Authentification <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <ul>
-                                <li><strong>Par mot de passe</strong> : identifiant + mot de passe fort</li>
-                                <li><strong>Par certificat</strong> : authentification mutuelle SSL/TLS</li>
-                                <li><strong>MFA</strong> : combinaison de plusieurs méthodes</li>
-                            </ul>
-                        </div></div>
-                        <div class="expandable"><button class="expand-btn">3.2 Chiffrement des communications (SSL/TLS) <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <p>Chiffrer le canal de communication entre l'application et la base de données pour protéger les données en transit.</p>
-                            <div class="code-block"><code>-- MySQL : activer SSL
-mysql --ssl-ca=ca.pem --ssl-cert=client-cert.pem --ssl-key=client-key.pem</code></div>
-                        </div></div>
-                        <div class="expandable"><button class="expand-btn">3.3 Gestion des mots de passe <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <ul>
-                                <li>Utiliser des mots de passe forts (longueur, complexité)</li>
-                                <li>Changer régulièrement les mots de passe</li>
-                                <li>Stocker les mots de passe de manière sécurisée (<strong>hachage + sel</strong>)</li>
-                            </ul>
-                        </div></div>
-                        <div class="expandable"><button class="expand-btn">3.4 Filtrage des accès <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <ul>
-                                <li>Limiter les connexions par <strong>adresse IP</strong></li>
-                                <li>Utiliser des <strong>pare-feux</strong></li>
-                                <li>Restreindre les ports d'accès (ex : MySQL port 3306)</li>
-                            </ul>
-                        </div></div>
-                        <div class="expandable"><button class="expand-btn">3.5 Journalisation des connexions <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <ul>
-                                <li>Enregistrer les tentatives de connexion (réussies et échouées)</li>
-                                <li>Détecter les comportements suspects (force brute)</li>
-                                <li>Permettre l'audit de sécurité</li>
-                            </ul>
-                        </div></div>
-                        <div class="warning-box">
-                            <strong>Risques en cas de mauvaise sécurisation :</strong><br>
-                            Fuite de données sensibles · Attaques par force brute · Intrusions · Compromission des comptes
-                        </div>
+                        <div class="expandable"><button class="expand-btn">Authentification <span class="arrow">&#9660;</span></button><div class="expand-content"><ul><li><strong>Par mot de passe</strong> : identifiant + mot de passe fort</li><li><strong>Par certificat</strong> : authentification mutuelle SSL/TLS</li><li><strong>MFA</strong> : combinaison de plusieurs méthodes</li></ul></div></div>
+                        <div class="expandable"><button class="expand-btn">Chiffrement SSL/TLS <span class="arrow">&#9660;</span></button><div class="expand-content"><div class="code-block"><code>mysql --ssl-ca=ca.pem --ssl-cert=client-cert.pem --ssl-key=client-key.pem</code></div></div></div>
                     </div>
                 </section>
 
                 <section id="c4-sql">
-                    <h3 class="section-title">III. Détection et prévention des injections SQL</h3>
+                    <h3 class="section-title">III. Injections SQL</h3>
                     <div class="card">
-                        <div class="definition-box">
-                            <strong>Injection SQL :</strong> Technique d'attaque consistant à <strong>insérer du code SQL malveillant</strong> dans les champs de saisie pour manipuler la base de données et obtenir un accès non autorisé.
-                        </div>
-                        <h5>Types d'injections SQL :</h5>
-                        <div class="expandable"><button class="expand-btn">1. Injection classique (In-band) <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <p>Le pirate insère du code SQL directement dans les champs de saisie.</p>
-                            <div class="code-block"><code>-- Exemple vulnérable
-SELECT * FROM users WHERE username = '$user' AND password = '$pass';
-
--- Attaque : saisir comme username :
+                        <div class="definition-box"><strong>Injection SQL :</strong> Technique d'attaque consistant à insérer du code SQL malveillant dans les champs de saisie.</div>
+                        <div class="expandable"><button class="expand-btn">Injection classique (In-band) <span class="arrow">&#9660;</span></button><div class="expand-content"><div class="code-block"><code>-- Attaque : saisir comme username :
 admin' --
--- Requête résultante (le mot de passe est ignoré) :
-SELECT * FROM users WHERE username = 'admin' --' AND password = ''</code></div>
-                        </div></div>
-                        <div class="expandable"><button class="expand-btn">2. Injection aveugle (Blind SQL) <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <p>Le pirate teste sans voir les résultats directement.</p>
-                            <div class="code-block"><code>' AND 1=1 --   → site vulnérable si ça marche
-' AND 1=2 --   → site vulnérable si comportement différent</code></div>
-                        </div></div>
-                        <div class="expandable"><button class="expand-btn">3. Injection basée sur le temps <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <p>Le pirate ralentit le serveur pour inférer des informations.</p>
-                            <div class="code-block"><code>' OR SLEEP(5) --  → si le site ralentit : faille trouvée</code></div>
-                        </div></div>
-                        <h5>Prévention des injections SQL :</h5>
-                        <div class="expandable"><button class="expand-btn">1. Requêtes préparées (Prepared Statements) — Méthode principale <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <div class="code-block"><code>-- PHP / PDO (recommandé)
+-- Requête résultante (mot de passe ignoré) :
+SELECT * FROM users WHERE username = 'admin' --' AND password = ''</code></div></div></div>
+                        <div class="expandable"><button class="expand-btn">Prévention : Requêtes préparées <span class="arrow">&#9660;</span></button><div class="expand-content"><div class="code-block"><code>-- PHP / PDO (recommandé)
 $stmt = $pdo->prepare('SELECT * FROM users WHERE username = ? AND password = ?');
-$stmt->execute([$username, $password]);
-
--- Java (JDBC)
-PreparedStatement stmt = conn.prepareStatement(
-    "SELECT * FROM users WHERE username=? AND password=?");
-stmt.setString(1, username);
-stmt.setString(2, password);</code></div>
-                        </div></div>
-                        <div class="expandable"><button class="expand-btn">2. Validation des entrées <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <ul>
-                                <li>Vérifier la <strong>longueur</strong> du texte</li>
-                                <li>Vérifier le <strong>type</strong> (email, nombre...)</li>
-                                <li>Lister les <strong>caractères autorisés</strong></li>
-                                <li>Refuser les caractères spéciaux non nécessaires</li>
-                            </ul>
-                            <div class="code-block"><code>-- PHP : échapper les caractères spéciaux
-$safe_input = mysqli_real_escape_string($conn, $input);
--- Exemple de règles :
--- Nom : seulement lettres et espaces
--- Âge : seulement chiffres (0-150)</code></div>
-                        </div></div>
-                        <div class="expandable"><button class="expand-btn">3. Principe du moindre privilège (SQL) <span class="arrow">&#9660;</span></button>
-                        <div class="expand-content">
-                            <p>L'utilisateur de la base de données utilisé par l'application ne doit avoir que les droits strictement nécessaires (jamais DBA/root pour les requêtes courantes).</p>
-                        </div></div>
+$stmt->execute([$username, $password]);</code></div></div></div>
                     </div>
                 </section>
 
                 <section id="c4-chiffrement">
-                    <h3 class="section-title">IV. Chiffrement des données sensibles</h3>
+                    <h3 class="section-title">IV. Chiffrement des données</h3>
                     <div class="card">
-                        <div class="definition-box">
-                            Le chiffrement des données protège les informations <strong>au repos</strong> (stockées) et <strong>en transit</strong> (transmises). Même si un attaquant accède à la base, les données restent illisibles sans la clé.
-                        </div>
-                        <h5>Niveaux de chiffrement :</h5>
                         <div class="grid-2">
-                            <div class="mini-card accent-blue"><h6>Chiffrement de la BD entière (TDE)</h6><p>Transparent Data Encryption — chiffre automatiquement tous les fichiers de la base de données.</p></div>
-                            <div class="mini-card accent-green"><h6>Chiffrement par colonne</h6><p>Chiffrer uniquement les colonnes sensibles (mots de passe, numéros de carte...).</p></div>
-                            <div class="mini-card accent-red"><h6>Hachage des mots de passe</h6><p>Ne jamais stocker en clair — utiliser bcrypt, Argon2 ou SHA-256 avec sel.</p></div>
-                            <div class="mini-card accent-purple"><h6>Chiffrement côté application</h6><p>Les données sont chiffrées avant d'être envoyées à la BD. La BD ne voit que des données chiffrées.</p></div>
-                        </div>
-                        <div class="example-box">
-                            <strong>Stockage sécurisé des mots de passe :</strong><br>
-                            <code>-- PHP : bcrypt (recommandé)</code><br>
-                            <code>$hash = password_hash($password, PASSWORD_BCRYPT);</code><br>
-                            <code>$valid = password_verify($input, $hash);</code><br><br>
-                            <strong>Jamais :</strong> <code>MD5($password)</code> ou stocker en clair !
+                            <div class="mini-card accent-blue"><h6>TDE (Transparent Data Encryption)</h6><p>Chiffre automatiquement tous les fichiers de la base de données.</p></div>
+                            <div class="mini-card accent-red"><h6>Hachage des mots de passe</h6><p>Utiliser bcrypt, Argon2 ou SHA-256 avec sel. Jamais en clair ni MD5.</p></div>
                         </div>
                     </div>
                 </section>
 
                 <section id="c4-sauvegardes">
-                    <h3 class="section-title">V. Sauvegardes sécurisées et restauration</h3>
+                    <h3 class="section-title">V. Sauvegardes sécurisées</h3>
                     <div class="card">
-                        <div class="important-box">
-                            <strong>Règle 3-2-1 des sauvegardes :</strong><br>
-                            • <strong>3</strong> copies des données<br>
-                            • Sur <strong>2</strong> types de supports différents<br>
-                            • Dont <strong>1</strong> copie hors site (off-site)
-                        </div>
-                        <h5>Types de sauvegardes :</h5>
+                        <div class="important-box"><strong>Règle 3-2-1 :</strong> <strong>3</strong> copies · Sur <strong>2</strong> supports différents · Dont <strong>1</strong> hors site</div>
                         <table class="styled-table">
                             <thead><tr><th>Type</th><th>Description</th><th>Avantages</th></tr></thead>
                             <tbody>
                                 <tr><td><strong>Complète</strong></td><td>Copie de toutes les données</td><td>Restauration simple</td></tr>
-                                <tr><td><strong>Incrémentale</strong></td><td>Uniquement les modifications depuis la dernière sauvegarde</td><td>Rapide, économique</td></tr>
-                                <tr><td><strong>Différentielle</strong></td><td>Modifications depuis la dernière sauvegarde complète</td><td>Compromis vitesse/simplicité</td></tr>
+                                <tr><td><strong>Incrémentale</strong></td><td>Modifications depuis la dernière sauvegarde</td><td>Rapide, économique</td></tr>
+                                <tr><td><strong>Différentielle</strong></td><td>Modifications depuis la dernière complète</td><td>Compromis vitesse/simplicité</td></tr>
                             </tbody>
                         </table>
-                        <h5>Sécurisation des sauvegardes :</h5>
-                        <ul>
-                            <li><strong>Chiffrement</strong> des sauvegardes</li>
-                            <li><strong>Test régulier</strong> de la procédure de restauration</li>
-                            <li><strong>Stockage sécurisé</strong> hors site ou dans le cloud chiffré</li>
-                            <li><strong>Contrôle d'accès</strong> aux fichiers de sauvegarde</li>
-                        </ul>
                     </div>
                 </section>
 
                 <section id="c4-audit">
-                    <h3 class="section-title">VI. Surveillance et audit des accès</h3>
+                    <h3 class="section-title">VI. Surveillance et audit</h3>
+                    <div class="card">
+                        <div class="remember-box"><strong>Cycle de sécurité des BDD :</strong> Contrôle d'accès → Connexions sécurisées → Prévention injections → Chiffrement → Sauvegardes → Audit</div>
+                    </div>
+                </section>
+
+                <!-- ==================== CHAPITRE 5 ==================== -->
+                <h2 class="chapter-title" id="chapitre5">Chapitre 5 : Sécurité des réseaux</h2>
+
+                <div class="card objectives-card">
+                    <h3>&#127919; Objectifs pédagogiques</h3>
+                    <ul>
+                        <li>Découvrir les risques pesant sur les réseaux informatiques</li>
+                        <li>Comprendre les différents modèles d'attaques réseau</li>
+                        <li>Apprendre les mesures pour sécuriser un réseau informatique</li>
+                        <li>Comprendre les protocoles classiques utilisés en sécurité réseau</li>
+                        <li>Avoir une vision globale des solutions : pare-feu, VPN, IDS/IPS</li>
+                    </ul>
+                </div>
+
+                <section id="c5-intro">
+                    <h3 class="section-title">Introduction — Pourquoi sécuriser un réseau ?</h3>
+                    <div class="card">
+                        <div class="grid-2">
+                            <div class="mini-card accent-green"><h6>&#128275; Avec sécurité réseau</h6><p>Protéger les données sensibles · Éviter les intrusions · Assurer la continuité des services · Protéger les utilisateurs</p></div>
+                            <div class="mini-card accent-red"><h6>&#128683; Sans sécurité réseau</h6><p>Vol de données · Piratage · Blocage des services · Pertes financières</p></div>
+                        </div>
+                        <div class="example-box"><strong>Exemple réel :</strong> Une entreprise attaquée par ransomware — les données deviennent inaccessibles et l'entreprise ne peut plus fonctionner.</div>
+                    </div>
+                </section>
+
+                <section id="c5-attaques">
+                    <h3 class="section-title">I. Modèles d'attaques réseau</h3>
+                    <div class="card">
+                        <div class="definition-box"><strong>Attaque réseau :</strong> Tentative malveillante visant à accéder aux données sensibles, modifier les données, bloquer les services ou espionner les communications.</div>
+                        <div class="grid-2">
+                            <div class="mini-card accent-blue">
+                                <h6>&#128065; Attaques Passives</h6>
+                                <p>L'attaquant <strong>observe sans modifier</strong> les communications réseau.</p>
+                                <p><em>Exemples : Sniffing, Analyse du trafic, OS Fingerprinting</em></p>
+                                <p><strong>Caractéristique :</strong> Difficiles à détecter — aucune modification des données.</p>
+                            </div>
+                            <div class="mini-card accent-red">
+                                <h6>&#9889; Attaques Actives</h6>
+                                <p>L'attaquant <strong>modifie ou perturbe</strong> le fonctionnement du réseau.</p>
+                                <p><em>Exemples : DoS/DDoS, Man-in-the-Middle, Replay Attack, DNS Spoofing</em></p>
+                                <p><strong>Objectifs :</strong> Modifier les données · Bloquer les services · Usurper l'identité.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="c5-sniffing">
+                    <h4>1. Écoute réseau (Sniffing)</h4>
+                    <div class="card">
+                        <div class="definition-box"><strong>Définition :</strong> Technique consistant à <strong>intercepter et analyser le trafic réseau</strong> afin de collecter des informations qui circulent entre les machines. L'attaquant agit comme un <em>espion du réseau</em>.</div>
+                        <div class="grid-2">
+                            <div class="mini-card accent-blue">
+                                <h6>1. Sniffing Passif</h6>
+                                <ul>
+                                    <li>Écoute du trafic uniquement</li>
+                                    <li>Pas de modification</li>
+                                    <li>Difficile à détecter</li>
+                                </ul>
+                            </div>
+                            <div class="mini-card accent-red">
+                                <h6>2. Sniffing Actif</h6>
+                                <ul>
+                                    <li>Modification du trafic</li>
+                                    <li>Utilise souvent l'ARP Spoofing</li>
+                                    <li>Plus dangereux</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h5>Outils de Sniffing :</h5>
+                        <div class="grid-2">
+                            <div class="mini-card accent-sand"><h6>Wireshark</h6><p>Outil graphique de capture et d'analyse de paquets réseau. Le plus populaire.</p></div>
+                            <div class="mini-card accent-olive"><h6>Tcpdump / Ettercap</h6><p>Outils en ligne de commande pour capturer et analyser le trafic réseau.</p></div>
+                        </div>
+                        <h5>Protection contre le Sniffing :</h5>
+                        <ul>
+                            <li>Utiliser des protocoles <strong>chiffrés</strong> (HTTPS, SSH, SFTP)</li>
+                            <li>Mettre en place des <strong>VPN</strong></li>
+                            <li>Utiliser des <strong>commutateurs (switches)</strong> plutôt que des hubs</li>
+                            <li>Détecter les interfaces en mode <strong>promiscuous</strong></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="c5-mitm">
+                    <h4>2. Attaque Man-in-the-Middle (MITM)</h4>
+                    <div class="card">
+                        <div class="definition-box"><strong>Définition :</strong> Attaque où un attaquant <strong>s'interpose entre deux parties</strong> (client et serveur) pour intercepter, modifier ou espionner les communications sans que les victimes ne s'en rendent compte.</div>
+                        <div class="warning-box">
+                            <strong>Technique principale :</strong> <strong>ARP Spoofing</strong> — l'attaquant envoie de fausses réponses ARP pour associer son adresse MAC à une IP légitime, redirigeant ainsi tout le trafic vers lui.
+                        </div>
+                        <h5>Protection contre le MITM :</h5>
+                        <ul>
+                            <li>Utiliser <strong>HTTPS</strong> avec des certificats valides (PKI)</li>
+                            <li>Activer <strong>HSTS</strong> (HTTP Strict Transport Security)</li>
+                            <li>Utiliser des <strong>VPN</strong> sur les réseaux publics</li>
+                            <li>Vérifier les certificats numériques</li>
+                        </ul>
+                        <div class="remember-box">La <strong>PKI (Infrastructure à clé publique)</strong> est la principale défense contre les attaques MITM via les certificats numériques signés par une autorité de certification.</div>
+                    </div>
+                </section>
+
+                <section id="c5-ddos">
+                    <h4>3. Attaque DoS / DDoS</h4>
                     <div class="card">
                         <div class="definition-box">
-                            La surveillance continue permet de <strong>détecter en temps réel</strong> les activités suspectes sur la base de données et de <strong>réagir rapidement</strong> en cas d'incident.
+                            <strong>DoS</strong> (Denial of Service) : Un seul attaquant sature le serveur.<br>
+                            <strong>DDoS</strong> (Distributed Denial of Service) : Un <strong>botnet</strong> d'ordinateurs infectés envoie des milliers de requêtes simultanées.
                         </div>
-                        <h5>Ce qu'il faut surveiller :</h5>
+                        <h5>Comment fonctionne un DDoS ?</h5>
+                        <div class="steps-flow">
+                            <div class="step">Botnet infecté</div><div class="step-arrow">→</div>
+                            <div class="step">Requêtes massives</div><div class="step-arrow">→</div>
+                            <div class="step">Serveur surchargé</div><div class="step-arrow">→</div>
+                            <div class="step">Service inaccessible</div>
+                        </div>
+                        <div class="example-box"><strong>Exemple :</strong> Un serveur peut supporter 1 000 utilisateurs. L'attaquant envoie 100 000 requêtes → Le serveur ne répond plus → Site inaccessible.</div>
+                        <h5>Protection contre les DDoS :</h5>
                         <ul>
-                            <li>Tentatives de connexion échouées répétées (force brute)</li>
-                            <li>Accès à des données sensibles en dehors des heures normales</li>
-                            <li>Requêtes inhabituelles ou de grande taille (exfiltration)</li>
-                            <li>Modifications de la structure de la base (DDL)</li>
-                            <li>Élévations de privilèges non justifiées</li>
+                            <li><strong>Pare-feu</strong> et limitation de débit (rate limiting)</li>
+                            <li><strong>CDN</strong> (Content Delivery Network) — distribue la charge</li>
+                            <li>Services anti-DDoS spécialisés (Cloudflare, Akamai)</li>
+                            <li><strong>IPS</strong> pour détecter et bloquer le trafic anormal</li>
                         </ul>
-                        <h5>Outils de surveillance :</h5>
+                    </div>
+                </section>
+
+                <section id="c5-parefeu">
+                    <h3 class="section-title">II. Pare-feu, NAT, Proxy</h3>
+                    <div class="card">
+                        <div class="definition-box"><strong>Pare-feu (Firewall) :</strong> Système qui <strong>filtre le trafic réseau</strong> entrant et sortant selon des règles de sécurité définies. Il constitue la première ligne de défense périmétrique.</div>
+                        <div class="grid-3">
+                            <div class="mini-card accent-green">
+                                <h6>&#128293; Pare-feu (Firewall)</h6>
+                                <p>Filtre le trafic selon des règles. Bloque les connexions non autorisées.</p>
+                            </div>
+                            <div class="mini-card accent-blue">
+                                <h6>&#127760; NAT</h6>
+                                <p>Traduit les adresses IP privées en adresses publiques. Masque la topologie interne.</p>
+                            </div>
+                            <div class="mini-card accent-purple">
+                                <h6>&#128336; Proxy</h6>
+                                <p>Intermédiaire entre clients et serveurs. Filtre et journalise le trafic web.</p>
+                            </div>
+                        </div>
+                        <h5>Types de pare-feux :</h5>
                         <table class="styled-table">
-                            <thead><tr><th>Outil</th><th>Usage</th></tr></thead>
+                            <thead><tr><th>Type</th><th>Niveau</th><th>Caractéristique</th></tr></thead>
                             <tbody>
-                                <tr><td><strong>MySQL General Log</strong></td><td>Enregistre toutes les requêtes SQL</td></tr>
-                                <tr><td><strong>MySQL Audit Plugin</strong></td><td>Audit avancé des accès</td></tr>
-                                <tr><td><strong>pgAudit (PostgreSQL)</strong></td><td>Audit détaillé des opérations</td></tr>
-                                <tr><td><strong>Oracle Audit Vault</strong></td><td>Centralisation des logs d'audit</td></tr>
+                                <tr><td><strong>Filtrage de paquets</strong></td><td>Couche 3/4</td><td>Filtre par IP, port, protocole</td></tr>
+                                <tr><td><strong>Stateful</strong></td><td>Couche 4</td><td>Suit l'état des connexions</td></tr>
+                                <tr><td><strong>Application (WAF)</strong></td><td>Couche 7</td><td>Analyse le contenu applicatif</td></tr>
+                                <tr><td><strong>Next-Gen (NGFW)</strong></td><td>Toutes couches</td><td>Inspection approfondie des paquets</td></tr>
                             </tbody>
                         </table>
+                    </div>
+                </section>
+
+                <section id="c5-vpn">
+                    <h3 class="section-title">III. VPN (Virtual Private Network)</h3>
+                    <div class="card">
+                        <div class="definition-box"><strong>VPN :</strong> Crée un <strong>tunnel chiffré</strong> entre l'utilisateur et le réseau cible, permettant de sécuriser les communications sur un réseau public (Internet). Garantit la confidentialité et l'intégrité des données en transit.</div>
+                        <div class="grid-2">
+                            <div class="mini-card accent-green">
+                                <h6>VPN Site à Site</h6>
+                                <p>Connecte deux réseaux d'entreprise distants via un tunnel sécurisé permanent.</p>
+                            </div>
+                            <div class="mini-card accent-blue">
+                                <h6>VPN d'accès distant</h6>
+                                <p>Permet à un employé de se connecter au réseau d'entreprise depuis n'importe où.</p>
+                            </div>
+                        </div>
+                        <h5>Protocoles VPN courants :</h5>
+                        <table class="styled-table">
+                            <thead><tr><th>Protocole</th><th>Sécurité</th><th>Usage</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>OpenVPN</strong></td><td class="tag-low">Très sécurisé</td><td>Open source, très répandu</td></tr>
+                                <tr><td><strong>IPsec/IKEv2</strong></td><td class="tag-low">Très sécurisé</td><td>Mobile, rapide, stable</td></tr>
+                                <tr><td><strong>WireGuard</strong></td><td class="tag-low">Excellent</td><td>Moderne, très performant</td></tr>
+                                <tr><td><strong>PPTP</strong></td><td class="tag-high">Obsolète</td><td>À éviter — failles connues</td></tr>
+                            </tbody>
+                        </table>
+                        <div class="remember-box"><strong>Bon à savoir :</strong> Il est recommandé d'utiliser un VPN sur tout réseau Wi-Fi public non sécurisé pour éviter le sniffing et les attaques MITM.</div>
+                    </div>
+                </section>
+
+                <section id="c5-protocoles">
+                    <h3 class="section-title">IV. Protocoles sécurisés</h3>
+                    <div class="card">
+                        <div class="important-box"><strong>Règle fondamentale :</strong> Remplacer tous les protocoles non chiffrés par leurs équivalents sécurisés.</div>
+                        <table class="styled-table">
+                            <thead><tr><th>Protocole non sécurisé</th><th>&#8594;</th><th>Protocole sécurisé</th><th>Usage</th></tr></thead>
+                            <tbody>
+                                <tr><td>HTTP</td><td>→</td><td><strong>HTTPS</strong> (TLS)</td><td>Navigation web sécurisée</td></tr>
+                                <tr><td>Telnet</td><td>→</td><td><strong>SSH</strong></td><td>Accès distant sécurisé aux serveurs</td></tr>
+                                <tr><td>FTP</td><td>→</td><td><strong>SFTP / FTPS</strong></td><td>Transfert de fichiers sécurisé</td></tr>
+                                <tr><td>SMTP</td><td>→</td><td><strong>SMTPS</strong> (TLS)</td><td>Envoi d'e-mails sécurisé</td></tr>
+                                <tr><td>DNS</td><td>→</td><td><strong>DNSSEC / DoH</strong></td><td>Protection contre DNS Spoofing</td></tr>
+                            </tbody>
+                        </table>
+                        <div class="grid-2">
+                            <div class="mini-card accent-green">
+                                <h6>TLS (Transport Layer Security)</h6>
+                                <p>Chiffre les communications en transit. Utilisé par HTTPS, SMTPS, FTPS. Successeur de SSL.</p>
+                            </div>
+                            <div class="mini-card accent-blue">
+                                <h6>SSH (Secure Shell)</h6>
+                                <p>Remplace Telnet. Fournit un accès distant chiffré, transfert de fichiers et tunneling.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="c5-ids">
+                    <h3 class="section-title">V. Détection et prévention d'intrusion (IDS/IPS)</h3>
+                    <div class="card">
+                        <div class="grid-2">
+                            <div class="mini-card accent-blue">
+                                <h6>&#128270; IDS — Détection</h6>
+                                <p><strong>Intrusion Detection System</strong> — Détecte les activités suspectes et génère des <strong>alertes</strong>. Rôle passif.</p>
+                                <p><em>Exemples : Snort (mode IDS), Suricata, OSSEC</em></p>
+                            </div>
+                            <div class="mini-card accent-red">
+                                <h6>&#128737; IPS — Prévention</h6>
+                                <p><strong>Intrusion Prevention System</strong> — Détecte ET <strong>bloque activement</strong> les menaces en temps réel. Rôle actif.</p>
+                                <p><em>Exemples : Snort (mode IPS), Suricata, Fail2Ban</em></p>
+                            </div>
+                        </div>
+                        <h5>Types d'IDS :</h5>
+                        <div class="grid-2">
+                            <div class="mini-card accent-purple">
+                                <h6>HIDS (Host-based)</h6>
+                                <p>Surveille un seul système hôte : intégrité des fichiers, logs, processus. Outils : Tripwire, AIDE, OSSEC.</p>
+                            </div>
+                            <div class="mini-card accent-sand">
+                                <h6>NIDS (Network-based)</h6>
+                                <p>Surveille le trafic réseau en temps réel. Outils : Snort, Suricata, Zeek.</p>
+                            </div>
+                        </div>
                         <div class="remember-box">
-                            <strong>Cycle de sécurité des BDD :</strong> Contrôle d'accès → Sécurisation des connexions → Prévention des injections → Chiffrement → Sauvegardes → Audit → (retour au début)
+                            <strong>Récapitulatif sécurité réseau :</strong><br>
+                            Attaques réseau → Pare-feu → VPN → Protocoles sécurisés → IDS/IPS → Sécurité Wi-Fi
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PDF Viewer Section -->
+                <section id="c5-pdf">
+                    <h3 class="section-title">&#128196; Cours PDF Complet — Chapitre 5</h3>
+                    <div class="card pdf-viewer-section">
+                        <p>Le cours complet du Chapitre 5 (Sécurité des réseaux) est disponible en format PDF ci-dessous. Ce document contient 111 diapositives couvrant tous les sujets du chapitre en détail.</p>
+                        <div class="pdf-embed-wrap">
+                            <iframe
+                                src="chapitre5-securite-reseaux.pdf"
+                                height="700"
+                                title="Chapitre 5 — Sécurité des réseaux (PDF complet)"
+                                loading="lazy">
+                                <p>Votre navigateur ne supporte pas l'affichage de PDF. <a href="chapitre5-securite-reseaux.pdf" download>Téléchargez le fichier PDF</a>.</p>
+                            </iframe>
+                            <div class="pdf-download-bar">
+                                <a href="chapitre5-securite-reseaux.pdf" download class="btn-download">&#11015; Télécharger le PDF</a>
+                                <span class="pdf-note">111 diapositives · PDF · Pr. Hafsa Benaddi</span>
+                            </div>
                         </div>
                     </div>
                 </section>
 
             </div><!-- end content-cours -->
-
 
             <!-- ============================================================ -->
             <!-- SECTION: QUIZ -->
@@ -1032,31 +869,29 @@ $safe_input = mysqli_real_escape_string($conn, $input);
             <div class="tab-content" id="content-quiz">
                 <div class="hero">
                     <h1>Quiz Cybersécurité</h1>
-                    <p>50 questions · QCM & Vrai/Faux · Toutes réponses expliquées</p>
-                    <p>Basé sur les 4 chapitres du cours</p>
+                    <p>65 questions · QCM & Vrai/Faux · Toutes réponses expliquées</p>
+                    <p>Basé sur les 5 chapitres du cours</p>
                 </div>
 
-                <!-- Quiz Start Screen -->
                 <div id="quiz-start" class="quiz-screen">
                     <div class="card quiz-start-card">
                         <div class="quiz-icon">&#128736;</div>
                         <h2>Prêt(e) pour le quiz ?</h2>
-                        <p>Ce quiz couvre <strong>l'ensemble du cours</strong> de Sécurité Informatique : introduction, cryptographie, sécurité des systèmes et sécurité des bases de données.</p>
+                        <p>Ce quiz couvre <strong>l'ensemble du cours</strong> de Sécurité Informatique : introduction, cryptographie, sécurité des systèmes, sécurité des bases de données et sécurité des réseaux.</p>
                         <div class="quiz-info-grid">
-                            <div class="quiz-info-item"><span class="quiz-info-num">50</span><span>Questions</span></div>
-                            <div class="quiz-info-item"><span class="quiz-info-num">4</span><span>Chapitres</span></div>
+                            <div class="quiz-info-item"><span class="quiz-info-num">65</span><span>Questions</span></div>
+                            <div class="quiz-info-item"><span class="quiz-info-num">5</span><span>Chapitres</span></div>
                             <div class="quiz-info-item"><span class="quiz-info-num">∞</span><span>Tentatives</span></div>
                         </div>
                         <button class="btn-quiz-start" onclick="startQuiz()">Démarrer le Quiz &#9654;</button>
                     </div>
                 </div>
 
-                <!-- Quiz Question Screen -->
                 <div id="quiz-question" class="quiz-screen hidden">
                     <div class="quiz-header">
                         <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="progressFill"></div></div>
                         <div class="quiz-meta">
-                            <span id="questionCounter">Question 1/50</span>
+                            <span id="questionCounter">Question 1/65</span>
                             <span id="scoreDisplay">Score : 0</span>
                         </div>
                     </div>
@@ -1074,14 +909,11 @@ $safe_input = mysqli_real_escape_string($conn, $input);
                     </div>
                 </div>
 
-                <!-- Quiz Results Screen -->
                 <div id="quiz-results" class="quiz-screen hidden">
                     <div class="card quiz-results-card">
                         <div class="quiz-icon" id="resultsIcon">&#127942;</div>
                         <h2 id="resultsTitle">Quiz terminé !</h2>
-                        <div class="score-circle" id="scoreCircle">
-                            <span id="finalScore">0/50</span>
-                        </div>
+                        <div class="score-circle" id="scoreCircle"><span id="finalScore">0/65</span></div>
                         <p id="resultsMessage"></p>
                         <div class="results-breakdown" id="resultsBreakdown"></div>
                         <div class="quiz-results-btns">
@@ -1091,7 +923,6 @@ $safe_input = mysqli_real_escape_string($conn, $input);
                     </div>
                 </div>
 
-                <!-- Quiz Review Screen -->
                 <div id="quiz-review" class="quiz-screen hidden">
                     <h2 class="section-title">Révision des réponses</h2>
                     <div id="reviewContainer"></div>
@@ -1099,13 +930,10 @@ $safe_input = mysqli_real_escape_string($conn, $input);
                         <button class="btn-quiz-start" onclick="resetQuiz()">&#8635; Recommencer le quiz</button>
                     </div>
                 </div>
-
             </div><!-- end content-quiz -->
-
         </main>
     </div>
 
-    <!-- Back to top -->
     <button class="back-to-top" id="backToTop" title="Retour en haut">&#8679;</button>
 
     <script src="quiz-data.js"></script>
